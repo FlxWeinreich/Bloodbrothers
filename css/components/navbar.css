@@ -1,0 +1,50 @@
+
+.navbar {
+	align-items: top;
+}
+
+.navbar h2 {
+	float: left;
+	align-items: top;
+}
+
+.navbar ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.navbar::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.navbar li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 35px;
+	position: relative;
+}
+.navbar a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+}
+.navbar a:hover {
+	color: white;
+	background-color: transparent;
+}
+.navbar a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	transition: all ease-in-out 250ms;
+}
+.navbar a:hover::before {
+	width: 100%;
+}
